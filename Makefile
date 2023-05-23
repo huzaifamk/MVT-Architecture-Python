@@ -17,4 +17,4 @@ startapp:
 .PHONY: variables
 PORT=8080
 PROJECT_NAME=MVT_Architecture_Python
-APP_NAME=Database_Manipulation
+APP_NAME=DB_Interface
