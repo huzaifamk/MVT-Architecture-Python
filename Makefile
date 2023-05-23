@@ -11,4 +11,4 @@ runserver:
 .PHONY: startapp
 
 startapp:
-	python3 MVT_Architecture_Python/manage.py startapp $(APP_NAME)
+	cd MVT_Architecture_Python && python3 manage.py startapp CRUD_App
