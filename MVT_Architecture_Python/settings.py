@@ -3,8 +3,8 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-# Path: MVT_Architecture_Python/templates
-TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+BASE_DIR2 = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+TEMPLATE_DIR = os.path.join(BASE_DIR2, 'templates')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure--6%zh*0k3+b%p!qq5cie^!3#&hk8zs8!9209@pyjg^4!@0x^53'
