@@ -5,10 +5,10 @@ project:
 
 .PHONY:runserver
 
-runserver:
-	python3 MVT_Architecture_Python/manage.py runserver
+run:
+	python3 manage.py runserver
 
 .PHONY: startapp
 
 startapp:
-	cd MVT_Architecture_Python && python3 manage.py startapp CRUD_App
+	python3 manage.py startapp $(APP_NAME)
