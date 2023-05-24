@@ -8,9 +8,8 @@ from Database_Manipulation import views as v2
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', v1.index, name='index'),
+    # path('', v1.index, name='index'),
+    path('', v1.home, name=''),
     path('create/', v1.create, name='create'),
-    path('home/', v1.home, name='home'),
-    path('home/v2', v2.Home_v2, name='home_v2'),
     path('dbInterface/', include('DB_Interface.urls')),
 ]

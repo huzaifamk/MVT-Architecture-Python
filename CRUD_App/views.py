@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Landing Page")
+    return render(request, 'CRUD_App/index.html')
 
 
 def home(request):
