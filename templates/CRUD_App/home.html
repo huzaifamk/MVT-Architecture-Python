@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 
 <head>
@@ -174,6 +175,7 @@
         </nav>
         <div class="hero">
             <div class="container">
+                <img src="{% static 'image/CRUD.png' %}" alt="CRUD App" width="500">
                 <h1>Manage your data efficiently with CRUD App</h1>
                 <p>A powerful tool to create, read, update, and delete data effortlessly.</p>
                 <a href="#" class="btn">Get Started</a>
@@ -226,7 +228,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2023 CRUD App. All rights reserved.</p>
+            <p>&copy; 2023 CRUD App. All rights reserved. Development by {{name}}</p>
         </div>
     </footer>
 </body>
