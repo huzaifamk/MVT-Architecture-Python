@@ -7,7 +7,7 @@ def index(request):
 
 
 def home(request):
-    return HttpResponse("Home Page")
+    return render(request, 'CRUD_App/home.html')
 
 
 def create(request):
