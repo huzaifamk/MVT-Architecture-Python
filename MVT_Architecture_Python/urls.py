@@ -9,7 +9,8 @@ from Database_Manipulation import views as v2
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('', v1.index, name='index'),
-    path('', v1.home, name=''),
+    path('', v1.home, name='home'),
     path('create/', v1.create, name='create'),
+    path('users/', v1.getUsers, name='getUsers'),
     path('dbInterface/', include('DB_Interface.urls')),
 ]
